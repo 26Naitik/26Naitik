@@ -81,10 +81,16 @@ fun_fact: "Consistency beats motivation. 🔥"
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=26Naitik&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=26Naitik&theme=tokyonight&hide_border=true" />
+<!-- Stats Card - most reliable instance -->
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=26Naitik&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=1800" />
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=26Naitik&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+<!-- Streak Stats - updated domain -->
+<img width="49%" src="https://streak-stats.demolab.com?user=26Naitik&theme=tokyonight&hide_border=true" />
+
+<!-- Top Languages -->
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=26Naitik&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&cache_seconds=1800" />
+
+<!-- Activity Graph - most stable provider -->
 <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=26Naitik&theme=tokyo-night&hide_border=true&area=true" />
 
 </div>
@@ -95,13 +101,16 @@ fun_fact: "Consistency beats motivation. 🔥"
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=26Naitik&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1" />
+<!-- Trophy - using column layout which is more stable -->
+<img src="https://github-profile-trophy.vercel.app/?username=26Naitik&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" />
 
 </div>
 
 ---
 
 ## 🐍 Contribution Snake
+
+> ⚠️ **Setup required:** Follow the GitHub Action steps below to activate the snake animation.
 
 <div align="center">
 
@@ -112,6 +121,41 @@ fun_fact: "Consistency beats motivation. 🔥"
 </picture>
 
 </div>
+
+<details>
+<summary>🔧 Click here to activate the Snake animation</summary>
+
+1. In your `26Naitik` repo, create the file: `.github/workflows/snake.yml`
+2. Paste this content:
+
+```yaml
+name: Generate Snake Animation
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: 26Naitik
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+3. Go to **Actions tab** → click **"Generate Snake Animation"** → click **"Run workflow"**
+4. Wait ~1 minute — the snake will appear! ✅
+
+</details>
 
 ---
 
@@ -139,7 +183,7 @@ fun_fact: "Consistency beats motivation. 🔥"
 
 ---
 
-## 🎮 Coding Activity
+## 🎮 Coding Vibes
 
 <div align="center">
 
