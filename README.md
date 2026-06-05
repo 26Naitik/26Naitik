@@ -99,17 +99,6 @@ fun_fact: "Consistency beats motivation. 🔥"
 
 ---
 
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-<!-- Trophy - using column layout which is more stable -->
-<img src="https://github-profile-trophy.vercel.app/?username=26Naitik&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" />
-
-</div>
-
----
-
 ## 🐍 Contribution Snake
 
 > ⚠️ **Setup required:** Follow the GitHub Action steps below to activate the snake animation.
